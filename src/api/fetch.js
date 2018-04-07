@@ -1,5 +1,5 @@
 
-import axios from 'axios'
+import axios from 'axios' //导入axios
 import qs from 'qs'
 import {DEV_HOST} from './config'
 

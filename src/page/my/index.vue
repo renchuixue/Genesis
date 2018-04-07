@@ -1,14 +1,24 @@
 <template>
   <div>
-    {{msg}}
+    <Header :title="head.title" :showLeft="false" ></Header>
+    <div class="content">
+      {{msg}}
+    </div>
   </div>
 </template>
 
 <script>
+import Header from '@view/header'
 export default {
+  components: {
+    Header
+  },
   data() {
     return {
-      msg: '我的'
+      msg: '我的',
+      head: {
+        title: '我的'
+      }
     }
   },
   mounted() {

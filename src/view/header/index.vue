@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .header{
     line-height: 1.2;
     background-color: #e93b3d;
@@ -58,6 +58,7 @@ export default {
     width: 100%;
     left: 0;
     z-index: 999;
+
   }
   .header .mint-header-title {
     font-size: .28rem;
