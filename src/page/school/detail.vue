@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      msg: 'DAJIBA'
+      msg: '详情'
     }
   },
   mounted() {
