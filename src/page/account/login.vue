@@ -10,7 +10,7 @@
            </div>
            <!--表单-->
             <div class="form-content">
-                <mt-field class="user_name iconfont icon-user"  v-model="birthday.userName" placeholder="请输入用户名">
+                <mt-field class="user_name iconfont icon-user"   v-model="birthday.userName" placeholder="请输入用户名">
                 </mt-field>
                 <mt-field class="password iconfont icon-password" v-model="birthday.passWord" placeholder="请输入密码" type="password">
                 </mt-field>
@@ -45,8 +45,8 @@ export default {
       },
       logo: "logo",
       flag: false,
-      SubmitText:{
-        default:"确认登录"
+      SubmitText: {
+        default: "确认登录"
       },
       toast: {
         usern: "用户为空",
@@ -85,10 +85,10 @@ export default {
       } else {
         //开始发送请求
         Indicator.open();
-        this.SubmitText.default="登录成功正在为你跳转..."
+        this.SubmitText.default = "登录成功正在为你跳转...";
         setTimeout(() => {
           Indicator.close();
-          this.SubmitText.default="确认登录"
+          this.SubmitText.default = "确认登录";
         }, 3000);
       }
     }
@@ -118,31 +118,31 @@ export default {
 }
 .form-content .user_name,
 .form-content .password {
-  display:flex;
-  -webkit-display:flex;
-  align-items:center;
-  -webkit-align-items:center;
+  display: flex;
+  -webkit-display: flex;
+  align-items: center;
+  -webkit-align-items: center;
   border-radius: 25px;
   border: 1px solid #ccc !important;
   width: 80%;
 }
-.mint-cell-wrapper{
+.mint-cell-wrapper {
   line-height: 0px !important;
 }
 .icon-user {
   line-height: 40px;
   text-indent: 10px;
-  font-size:0.4rem;
+  font-size: 0.4rem;
 }
-.icon-password{
+.icon-password {
   line-height: 40px;
   text-indent: 10px;
-  font-size:0.4rem;
+  font-size: 0.4rem;
 }
 .form-content .user_name input,
 .form-content .password input {
   height: 100%;
-  border:0px !important;
+  border: 0px !important;
 }
 
 .form-content .password {

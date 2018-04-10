@@ -78,15 +78,17 @@ const router = new Router({
   routes
 })
 
-
+//路由验证
 router.beforeEach((to, from, next) => {
   if(to.path=='/detail'){
     console.log('555')
+    console.log(to)
   }else{
+    //next({path:"/login"})
+    console.log(to.path)
     next()
   }
-  // console.log(to)
-  // console.log(from)
+
   
 })
 

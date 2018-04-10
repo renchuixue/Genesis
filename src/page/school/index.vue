@@ -82,6 +82,7 @@ export default {
       window.location.href = "https://www.baidu.com/";
     },
     listTap(e) {
+      console.log(e)
       this.$router.push(`/detail?bid=${e}`)
     }
   }
