@@ -78,4 +78,16 @@ const router = new Router({
   routes
 })
 
+
+router.beforeEach((to, from, next) => {
+  if(to.path=='/detail'){
+    console.log('555')
+  }else{
+    next()
+  }
+  // console.log(to)
+  // console.log(from)
+  
+})
+
 export default router

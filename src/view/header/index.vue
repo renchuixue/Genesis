@@ -51,7 +51,7 @@ export default {
 <style lang="less" scoped>
   .header{
     line-height: 1.2;
-    background-color: #e93b3d;
+    background-color: #26a2ff;
     height: 44px;
     position: fixed;
     top: 0;

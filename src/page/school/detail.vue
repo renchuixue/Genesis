@@ -1,6 +1,7 @@
 <template>
   <div>
     {{msg}}
+    <button @click="route" :ss="$route.path">xzczxv</button>
   </div>
 </template>
 
@@ -13,8 +14,13 @@ export default {
     }
   },
   mounted() {
+    console.log(this.$route.query.bid)
   },
   methods: {
+    route(){
+      
+      console.log(this.$route.params)
+    }
   }
 }
 </script>
